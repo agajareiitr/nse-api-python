@@ -3,7 +3,7 @@ import requests
 
 app = Flask(__name__)
 
-@app.route("/<string:n>")
+@app.route("/stocks/<string:n>")
 
 def getoptionchain(n):
     url = "https://www.nseindia.com/api/option-chain-equities?symbol="+n
